@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assigment1.book.listbook.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="256.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách sách" />
+      <ListView fx:id="lvBook" layoutX="56.0" layoutY="75.0" prefHeight="200.0" prefWidth="263.0" />
+      <Button onAction="#onToAdd" layoutX="470.0" layoutY="75.0" mnemonicParsing="false" text="Add book" />
+      <Button layoutX="470.0" layoutY="146.0" mnemonicParsing="false" text="Edit book" />
+   </children>
+</Pane>
