@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assigment1/book/addbook/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2022_10_02_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2022_10_02_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/bane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/bane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/bane.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/list.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assigment1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assigment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/bane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/bane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/bane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/addbook/Book.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,7 @@
       <recent name="C:\java2\src\assigment1\book\addbook" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assigment1.Main" />
       <module name="untitled" />
@@ -70,9 +74,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="session1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="session1.Main" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.session1.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -87,6 +105,7 @@
       <workItem from="1665586515169" duration="4800000" />
       <workItem from="1665591958039" duration="824000" />
       <workItem from="1665623543420" duration="169000" />
+      <workItem from="1665659794647" duration="4646000" />
     </task>
     <servers />
   </component>

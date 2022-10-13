@@ -9,7 +9,7 @@
 <Pane fx:controller="assigment1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="214.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hãy lựa chọn cái mà bạn thích" />
-      <Button onAction="#onToList" layoutX="63.0" layoutY="90.0" mnemonicParsing="false" text="Sách" />
+      <Button onAction="#onToBook" layoutX="63.0" layoutY="90.0" mnemonicParsing="false" text="Sách" />
       <Button layoutX="259.0" layoutY="90.0" mnemonicParsing="false" text="Thành Viên" />
       <Button layoutX="462.0" layoutY="90.0" mnemonicParsing="false" text="Quản Lý Sách" />
    </children>

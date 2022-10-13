@@ -5,12 +5,19 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="assigment1.book.listbook.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assigment1.book.listbook.Controller">
    <children>
       <Text layoutX="256.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách sách" />
-      <ListView fx:id="lvBook" layoutX="56.0" layoutY="75.0" prefHeight="200.0" prefWidth="263.0" />
-      <Button onAction="#onToAdd" layoutX="470.0" layoutY="75.0" mnemonicParsing="false" text="Add book" />
-      <Button layoutX="470.0" layoutY="146.0" mnemonicParsing="false" text="Edit book" />
+      <Button layoutX="470.0" layoutY="75.0" mnemonicParsing="false" onAction="#onToAdd" prefHeight="25.0" prefWidth="94.0" text="Add book" />
+      <Button layoutX="470.0" layoutY="129.0" mnemonicParsing="false" text="&lt;&lt; Back home" />
+      <TableView fx:id="tbBooks" layoutX="44.0" layoutY="71.0" prefHeight="200.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="tdId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tdName" prefWidth="166.0" text="Name" />
+            <TableColumn fx:id="tdAuthor" prefWidth="59.0" text="Author" />
+            <TableColumn fx:id="tdQty" prefWidth="58.0" text="Qty" />
+            <TableColumn prefWidth="47.0" text="Action" />
+        </columns>
+      </TableView>
    </children>
 </Pane>
