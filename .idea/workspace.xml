@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/students/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/students/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/students/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/database/Connector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/addbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/addbook/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/addbook/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/addbook/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
       <recent name="C:\java2\src\assigment1\book\addbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.students.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assigment1.Main" />
       <module name="untitled" />
@@ -93,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.students.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.students.Main" />
         <item itemvalue="Application.session1.Main" />
       </list>
     </recent_temporary>
@@ -111,7 +114,8 @@
       <workItem from="1665591958039" duration="824000" />
       <workItem from="1665623543420" duration="169000" />
       <workItem from="1665659794647" duration="8006000" />
-      <workItem from="1665763256156" duration="2152000" />
+      <workItem from="1665763256156" duration="2554000" />
+      <workItem from="1666089992012" duration="5493000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -134,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665670727450</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="up">
+      <created>1665765628181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665765628182</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

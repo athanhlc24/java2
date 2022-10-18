@@ -1,6 +1,6 @@
 package assigment1.book.listbook;
-
 import assigment1.Main;
+import assigment1.database.Connector;
 import assigment1.entities.Book;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,16 +9,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 public class Controller implements Initializable{
     public TableView<Book> tbBooks;
@@ -28,9 +23,6 @@ public class Controller implements Initializable{
     public TableColumn<Book,Integer> tdQty;
 
 
-    public final static String connectionString = "jdbc:mysql://localhost:3306/java2";
-    public final static String user = "root";
-    public final static String password = "";// nếu là macbook thì là ="root";
 
 
     @Override
@@ -46,11 +38,10 @@ public class Controller implements Initializable{
 //         tbBooks.setItems(ls);
         // lấy data từ database
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(connectionString,user,password);
-            Statement statement = conn.createStatement();
+
             String sql_txt = "select * from books";
-            ResultSet rs = statement.executeQuery(sql_txt);
+            Connector conn = new Connector();
+            ResultSet rs = conn.query(sql_txt);
             while (rs.next()){
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
@@ -69,6 +60,15 @@ public class Controller implements Initializable{
 
     }
 
-    public void onToAdd(ActionEvent actionEvent) {
+    public void onToAdd(ActionEvent actionEvent) throws Exception{
+        Parent addBook = FXMLLoader.load(getClass().getResource("../addbook/add.fxml"));
+        Main.rootStage.setTitle("Books");
+        Main.rootStage.setScene(new Scene(addBook,800,600));
+    }
+
+    public void onBackHome(ActionEvent actionEvent) throws Exception{
+        Parent addBook = FXMLLoader.load(getClass().getResource("home.fxml"));
+        Main.rootStage.setTitle("Books");
+        Main.rootStage.setScene(new Scene(addBook,800,600));
     }
 }
