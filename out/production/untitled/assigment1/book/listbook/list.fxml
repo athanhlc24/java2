@@ -9,7 +9,7 @@
    <children>
       <Text layoutX="256.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách sách" />
       <Button layoutX="470.0" layoutY="75.0" mnemonicParsing="false" onAction="#onToAdd" prefHeight="25.0" prefWidth="94.0" text="Add book" />
-      <Button layoutX="470.0" layoutY="129.0" mnemonicParsing="false" text="&lt;&lt; Back home" />
+      <Button onAction="#onBackHome" layoutX="470.0" layoutY="129.0" mnemonicParsing="false" text="&lt;&lt; Back home" />
       <TableView fx:id="tbBooks" layoutX="44.0" layoutY="71.0" prefHeight="200.0" prefWidth="406.0">
         <columns>
           <TableColumn fx:id="tdId" prefWidth="75.0" text="ID" />

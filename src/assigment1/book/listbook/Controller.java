@@ -40,7 +40,7 @@ public class Controller implements Initializable{
         try {
 
             String sql_txt = "select * from books";
-            Connector conn = new Connector();
+            Connector conn = Connector.getInstance();
             ResultSet rs = conn.query(sql_txt);
             while (rs.next()){
                 int id = rs.getInt("id");
@@ -67,8 +67,8 @@ public class Controller implements Initializable{
     }
 
     public void onBackHome(ActionEvent actionEvent) throws Exception{
-        Parent addBook = FXMLLoader.load(getClass().getResource("home.fxml"));
+        Parent addBooks = FXMLLoader.load(getClass().getResource("../../home.fxml"));
         Main.rootStage.setTitle("Books");
-        Main.rootStage.setScene(new Scene(addBook,800,600));
+        Main.rootStage.setScene(new Scene(addBooks,800,600));
     }
 }
