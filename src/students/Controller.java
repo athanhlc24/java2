@@ -1,8 +1,13 @@
 package students;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -56,4 +61,12 @@ public class Controller implements Initializable {
             tbStudent.setItems(ls);
         }
     }
+
+    public void onToBack(ActionEvent actionEvent) throws Exception {
+        Parent addStudent = FXMLLoader.load(getClass().getResource("add/add.fxml"));
+        Main.rootStage.setTitle("Students");
+        Main.rootStage.setScene(new Scene(addStudent,800,600));
+    }
+
+
 }
