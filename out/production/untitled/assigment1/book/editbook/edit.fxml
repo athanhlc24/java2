@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assigment1.book.editbook.Controller">
+   <children>
+      <Text layoutX="257.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa sách" />
+      <TextField fx:id="txtName" layoutX="66.0" layoutY="57.0" promptText="Name" />
+      <TextField fx:id="txtAuthor" layoutX="66.0" layoutY="125.0" promptText="Author" />
+      <TextField fx:id="txtQty" layoutX="66.0" layoutY="200.0" promptText="Qty" />
+      <Text layoutX="199.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Button layoutX="462.0" layoutY="57.0" mnemonicParsing="false" onAction="#bttEdit" text="Add" />
+      <Button layoutX="462.0" layoutY="200.0" mnemonicParsing="false" onAction="#bttBack" text="Back&lt;&lt;" />
+      <Button onAction="#delete" layoutX="465.0" layoutY="125.0" mnemonicParsing="false" text="Delete" />
+   </children>
+</Pane>

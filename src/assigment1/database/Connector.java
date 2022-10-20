@@ -51,7 +51,7 @@ public class Connector {
         return conn.prepareStatement(sql);
     }
 
-    public boolean excute(String sql, ArrayList parameters) throws Exception{
+    public boolean excute(String sql, ArrayList parameters) {
         try {
             PreparedStatement pstm = getPreparedStatement(sql);
             for (int i = 0; i<parameters.size();i++){
@@ -67,28 +67,29 @@ public class Connector {
             pstm.execute();
 
         }catch (Exception e){
+            System.out.println(e.getMessage());
             return false;
         }
         return true;
     }
 
-//    public ResultSet excuteQuery(String sql, ArrayList parameters) throws Exception{// dùng khi select * from where.. tìm kiếm lọc
-//        try {
-//            PreparedStatement pstm = getPreparedStatement(sql);
-//            for (int i = 0; i<parameters.size();i++){
-//                if (parameters.get(i) instanceof Integer){
-//                    pstm.setInt(i+1,(Integer) parameters.get(i));
-//                } else if (parameters.get(i) instanceof  Double) {
-//                    pstm.setDouble(i+1,(Double) parameters.get(i));
-//
-//                }else {
-//                    pstm.setString(i+1,(String) parameters.get(i));
-//                }
-//            }
-//            return pstm.executeQuery();
-//
-//        }catch (Exception e){
-//            return null;
-//        }
-//    }
+    public ResultSet excuteQuery(String sql, ArrayList parameters) throws Exception{// dùng khi select * from where.. tìm kiếm lọc
+        try {
+            PreparedStatement pstm = getPreparedStatement(sql);
+            for (int i = 0; i<parameters.size();i++){
+                if (parameters.get(i) instanceof Integer){
+                    pstm.setInt(i+1,(Integer) parameters.get(i));
+                } else if (parameters.get(i) instanceof  Double) {
+                    pstm.setDouble(i+1,(Double) parameters.get(i));
+
+                }else {
+                    pstm.setString(i+1,(String) parameters.get(i));
+                }
+            }
+            return pstm.executeQuery();
+
+        }catch (Exception e){
+            return null;
+        }
+    }
 }
