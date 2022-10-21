@@ -17,4 +17,10 @@ public class Controller {
         Main.rootStage.setTitle("Books");
         Main.rootStage.setScene(new Scene(listBook,800,600));
     }
+
+    public void onToStudent(ActionEvent actionEvent) throws Exception{
+        Parent listBook = FXMLLoader.load(getClass().getResource("student/list/list.fxml"));
+        Main.rootStage.setTitle("Books");
+        Main.rootStage.setScene(new Scene(listBook,800,600));
+    }
 }

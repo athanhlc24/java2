@@ -10,7 +10,7 @@
    <children>
       <Text layoutX="214.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hãy lựa chọn cái mà bạn thích" />
       <Button onAction="#onToBook" layoutX="63.0" layoutY="90.0" mnemonicParsing="false" text="Sách" />
-      <Button layoutX="259.0" layoutY="90.0" mnemonicParsing="false" text="Thành Viên" />
+      <Button onAction="#onToStudent" layoutX="259.0" layoutY="90.0" mnemonicParsing="false" text="Thành Viên" />
       <Button onAction="#bookRent" layoutX="462.0" layoutY="90.0" mnemonicParsing="false" text="Quản Lý Mượn Sách" />
    </children>
 </Pane>

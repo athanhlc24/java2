@@ -5,35 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/assigment1/book/editbook/edit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assigment1/bookrent/create/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/impls/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/inerfaces/IBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/student/add/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/student/edit/edit.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/student/list/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/implsStudent/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/interfacesStudent/IStudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/addbook/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/addbook/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/editbook/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/editbook/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/book/listbook/list.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/borrowbook/addborrowbook/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/borrowbook/editborrowbook/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/borrowbook/listborrowbook/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/database/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/database/Connector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/entities/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/entities/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/students/add/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/students/add/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/addmember/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/editmember/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/listmember/Controller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assigment1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/book/addbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/addbook/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/book/editbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/editbook/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/book/listbook/list.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/borrowbook/addborrowbook/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/borrowbook/editborrowbook/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/borrowbook/listborrowbook/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/database/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/database/Connector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/entities/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assigment1/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/add/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/add/add.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/member/addmember/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/member/editmember/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/member/listmember/Controller.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/java2/java2/src/assigment1/book/editbook",
+    "last_opened_file_path": "C:/java2/java2/src/assigment1/student/edit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +64,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java2\java2\src\assigment1\student\edit" />
       <recent name="C:\java2\java2\src\assigment1\book\editbook" />
       <recent name="C:\java2\src\assigment1\book\addbook" />
     </key>
@@ -147,7 +136,7 @@
       <workItem from="1665763256156" duration="2554000" />
       <workItem from="1666089992012" duration="11469000" />
       <workItem from="1666193712256" duration="2167000" />
-      <workItem from="1666263075840" duration="9489000" />
+      <workItem from="1666263075840" duration="16823000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -205,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666195641389</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="up">
+      <created>1666273770492</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666273770492</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
