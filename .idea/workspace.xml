@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assigment1/student/add/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assigment1/student/edit/edit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assigment1/student/list/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/implsStudent/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/interfacesStudent/IStudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/addmember/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/editmember/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/member/listmember/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/member/addmember/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/member/editmember/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/member/listmember/Controller.java" beforeDir="false" />
-    </list>
+    <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +118,7 @@
       <workItem from="1665763256156" duration="2554000" />
       <workItem from="1666089992012" duration="11469000" />
       <workItem from="1666193712256" duration="2167000" />
-      <workItem from="1666263075840" duration="16823000" />
+      <workItem from="1666263075840" duration="17038000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -201,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666273770492</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="up">
+      <created>1666371791436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666371791436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

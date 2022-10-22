@@ -33,7 +33,7 @@ public class StudentRepository implements IStudentRepository {
     @Override
     public boolean create(Student student) {
         try {
-            String sql_txt = "insert into student(name,email,mail) values(?,?,?)";
+            String sql_txt = "insert into student(name,email,tel) values(?,?,?)";
             Connector conn = Connector.getInstance();
             ArrayList arr = new ArrayList<>();
             arr.add(student.getName());
