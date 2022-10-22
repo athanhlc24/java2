@@ -3,11 +3,12 @@ package dao.impls;
 import assigment1.database.Connector;
 import assigment1.entities.Book;
 import dao.inerfaces.IBookRepository;
+import dao.inerfaces.IRepository;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class BookRepository implements IBookRepository {
+public class BookRepository implements IRepository<Book> {//THAY BOOK_REPOSITORY BANG REPOSITORY
     @Override
     public ArrayList<Book> all() {
         ArrayList<Book> ls = new ArrayList<>();

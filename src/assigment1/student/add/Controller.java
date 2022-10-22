@@ -2,7 +2,7 @@ package assigment1.student.add;
 
 import assigment1.Main;
 import assigment1.entities.Student;
-import dao.implsStudent.StudentRepository;
+import dao.impls.StudentRepository;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

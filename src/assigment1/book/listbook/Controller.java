@@ -2,6 +2,8 @@ package assigment1.book.listbook;
 import assigment1.Main;
 import assigment1.database.Connector;
 import assigment1.entities.Book;
+import assigment1.enums.RepoType;
+import assigment1.factory.RepositoryFactory;
 import dao.impls.BookRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -60,7 +62,8 @@ public class Controller implements Initializable{
 //        }finally {
 //            tbBooks.setItems(ls);
 //        }
-        BookRepository rp  = new BookRepository();
+//        BookRepository rp  = new BookRepository();
+        BookRepository rp = (BookRepository) RepositoryFactory.createRepository(RepoType.BOOK);// factory
         ls.addAll(rp.all());
         tbBooks.setItems(ls);
 

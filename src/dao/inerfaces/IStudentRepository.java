@@ -1,4 +1,4 @@
-package dao.interfacesStudent;
+package dao.inerfaces;
 
 import assigment1.entities.Student;
 

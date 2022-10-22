@@ -1,13 +1,14 @@
-package dao.implsStudent;
+package dao.impls;
 
 import assigment1.database.Connector;
 import assigment1.entities.Student;
-import dao.interfacesStudent.IStudentRepository;
+import dao.inerfaces.IRepository;
+import dao.inerfaces.IStudentRepository;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class StudentRepository implements IStudentRepository {
+public class StudentRepository implements IRepository<Student> {
     @Override
     public ArrayList<Student> all() {
         ArrayList<Student> ls = new ArrayList<>();
@@ -81,5 +82,10 @@ public class StudentRepository implements IStudentRepository {
             System.out.println(e.getMessage());
         }
         return false;
+    }
+
+    @Override
+    public Student findOne(Integer id) {
+        return null;
     }
 }
