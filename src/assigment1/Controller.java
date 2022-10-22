@@ -13,7 +13,7 @@ public class Controller {
     }
 
     public void bookRent(ActionEvent actionEvent)throws Exception {
-        Parent listBook = FXMLLoader.load(getClass().getResource("bookrent/create/create.fxml"));
+        Parent listBook = FXMLLoader.load(getClass().getResource("bookrent/list/list.fxml"));
         Main.rootStage.setTitle("Books");
         Main.rootStage.setScene(new Scene(listBook,800,600));
     }

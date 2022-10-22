@@ -5,13 +5,13 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="assigment1.bookrent.create.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assigment1.bookrent.create.Controller">
    <children>
       <Text layoutX="274.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book rent" />
       <ComboBox fx:id="cbBook" layoutX="47.0" layoutY="50.0" prefHeight="25.0" prefWidth="173.0" promptText="select book" />
       <ComboBox fx:id="cbStudent" layoutX="47.0" layoutY="100.0" prefHeight="25.0" prefWidth="173.0" promptText="select student" />
       <DatePicker fx:id="dpExpired" layoutX="47.0" layoutY="161.0" prefHeight="25.0" prefWidth="173.0" promptText="Expired at" />
-      <Button onAction="#Submit" layoutX="461.0" layoutY="50.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="461.0" layoutY="50.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+      <Button layoutX="461.0" layoutY="136.0" mnemonicParsing="false" onAction="#ontoBack" text="&lt;&lt;Back" />
    </children>
 </Pane>

@@ -14,6 +14,6 @@
       <Text layoutX="199.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
       <Button layoutX="462.0" layoutY="57.0" mnemonicParsing="false" onAction="#bttEdit" text="Add" />
       <Button layoutX="462.0" layoutY="200.0" mnemonicParsing="false" onAction="#bttBack" text="Back&lt;&lt;" />
-      <Button onAction="#delete" layoutX="465.0" layoutY="125.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="465.0" layoutY="125.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
    </children>
 </Pane>

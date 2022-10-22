@@ -1,5 +1,6 @@
 package assigment1.bookrent.create;
 
+import assigment1.Main;
 import assigment1.entities.Book;
 import assigment1.entities.Student;
 import assigment1.enums.RepoType;
@@ -9,7 +10,10 @@ import dao.impls.StudentRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 
@@ -45,5 +49,11 @@ public class Controller implements Initializable {
         System.out.println(dp);
         System.out.println(selectedStudent);
 
+    }
+
+    public void ontoBack(ActionEvent actionEvent) throws Exception{
+        Parent listBook = FXMLLoader.load(getClass().getResource("../list/list.fxml"));
+        Main.rootStage.setTitle("Books");
+        Main.rootStage.setScene(new Scene(listBook,800,600));
     }
 }

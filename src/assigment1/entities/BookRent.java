@@ -14,6 +14,10 @@ public class BookRent {
     private Date expiredDate;
     private  Integer status;
 
+    private String bookName;
+
+    private String statusLabel;
+
     public BookRent() {
     }
 
@@ -73,6 +77,19 @@ public class BookRent {
     public void setStatus(Integer status) {
         this.status = status;
     }
+
+    public String getBookName() {
+        return this.book().getName();
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+    public String getStatusLabel() {
+        return status==0?"Chưa trả":"Đã trả";
+    }
+
+
     public Book book (){
       return ((BookRepository)RepositoryFactory.createRepository(RepoType.BOOK)).findOne(this.getBookId());
 //        BookRepository br = new BookRepository();
