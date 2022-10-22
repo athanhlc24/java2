@@ -2,6 +2,8 @@ package assigment1.bookrent.create;
 
 import assigment1.entities.Book;
 import assigment1.entities.Student;
+import assigment1.enums.RepoType;
+import assigment1.factory.RepositoryFactory;
 import dao.impls.BookRepository;
 import dao.impls.StudentRepository;
 import javafx.collections.FXCollections;
@@ -22,12 +24,14 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        BookRepository rp = new BookRepository();
+//        BookRepository rp = new BookRepository();
         ObservableList<Book> ls = FXCollections.observableArrayList();
+        BookRepository rp = (BookRepository) RepositoryFactory.createRepository(RepoType.BOOK);
         ls.addAll(rp.all());
         cbBook.setItems(ls);
-        StudentRepository rp2 = new StudentRepository();
+//        StudentRepository rp2 = new StudentRepository();
         ObservableList<Student> lsStudent = FXCollections.observableArrayList();
+        StudentRepository rp2 = (StudentRepository)RepositoryFactory.createRepository(RepoType.STUDENT);
         lsStudent.addAll(rp2.all());
         cbStudent.setItems(lsStudent);
     }
