@@ -1,9 +1,8 @@
-package dao.impls;
+package assigment1.dao.impls;
 
 import assigment1.database.Connector;
 import assigment1.entities.Student;
-import dao.inerfaces.IRepository;
-import dao.inerfaces.IStudentRepository;
+import assigment1.dao.inerfaces.IRepository;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;

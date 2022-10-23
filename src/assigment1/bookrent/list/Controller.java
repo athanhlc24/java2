@@ -4,8 +4,7 @@ import assigment1.Main;
 import assigment1.entities.BookRent;
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
-import dao.impls.BookRentRepository;
-import dao.impls.BookRepository;
+import assigment1.dao.impls.BookRentRepository;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -22,24 +21,24 @@ import java.util.ResourceBundle;
 public class Controller implements Initializable {
     public TableView<BookRent> tbRents;
     public TableColumn<BookRent,Integer> tdId;
-    public TableColumn<BookRent,Integer>tdStudent;
-    public TableColumn <BookRent, Date>tdRentDate;
-    public TableColumn <BookRent,Date>tdExpiredDate;
-    public TableColumn<BookRent,String> tdStatus;
     public TableColumn<BookRent,String> tdBook;
+    public TableColumn<BookRent,Integer> tdStudent;
+    public TableColumn<BookRent, Date> tdRentDate;
+    public TableColumn<BookRent,String> tdStatus;
+    public TableColumn<BookRent,Date> tdExpired;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        tdId.setCellValueFactory(new PropertyValueFactory<>("Id"));
-        tdBook.setCellValueFactory(new PropertyValueFactory<>("bookName"));
+        tdId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        tdBook.setCellValueFactory(new PropertyValueFactory<>("bookId"));
         tdStudent.setCellValueFactory(new PropertyValueFactory<>("studentId"));
         tdRentDate.setCellValueFactory(new PropertyValueFactory<>("rentDate"));
-        tdExpiredDate.setCellValueFactory(new PropertyValueFactory<>("expiredDate"));
-        tdStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
-
-        BookRentRepository brr = (BookRentRepository) RepositoryFactory.createRepository(RepoType.BOOKRENT);
+        tdExpired.setCellValueFactory(new PropertyValueFactory<>("expiredDate"));
+        tdStatus.setCellValueFactory(new PropertyValueFactory<>("statusLabel"));
+        BookRentRepository brr = (BookRentRepository)RepositoryFactory.createRepository(RepoType.BOOKRENT);
         tbRents.getItems().addAll(brr.all());
     }
+
 
     public void onToBack(ActionEvent actionEvent) throws Exception{
         Parent listBook = FXMLLoader.load(getClass().getResource("../../home.fxml"));

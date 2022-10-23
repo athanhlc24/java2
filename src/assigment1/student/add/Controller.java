@@ -2,7 +2,9 @@ package assigment1.student.add;
 
 import assigment1.Main;
 import assigment1.entities.Student;
-import dao.impls.StudentRepository;
+import assigment1.dao.impls.StudentRepository;
+import assigment1.enums.RepoType;
+import assigment1.factory.RepositoryFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,7 +30,7 @@ public class Controller {
             String email = txtEmail.getText();
             String tel = txtTel.getText();
             Student student = new Student(null,name,email,tel);
-            StudentRepository rp = new StudentRepository();
+            StudentRepository rp = (StudentRepository) RepositoryFactory.createRepository(RepoType.STUDENT);
             if (rp.create(student)){
                 bttBackToList();
 

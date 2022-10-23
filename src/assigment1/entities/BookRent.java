@@ -2,7 +2,7 @@ package assigment1.entities;
 
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
-import dao.impls.BookRepository;
+import assigment1.dao.impls.BookRepository;
 
 import java.sql.Date;
 
@@ -12,14 +12,10 @@ public class BookRent {
     private Integer studentId;
     private Date rentDate;
     private Date expiredDate;
-    private  Integer status;
+    private Integer status;
 
     private String bookName;
-
     private String statusLabel;
-
-    public BookRent() {
-    }
 
     public BookRent(Integer id, Integer bookId, Integer studentId, Date rentDate, Date expiredDate, Integer status) {
         this.id = id;
@@ -85,15 +81,15 @@ public class BookRent {
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
+
     public String getStatusLabel() {
         return status==0?"Chưa trả":"Đã trả";
     }
 
-
-    public Book book (){
+    public Book book(){
       return ((BookRepository)RepositoryFactory.createRepository(RepoType.BOOK)).findOne(this.getBookId());
-//        BookRepository br = new BookRepository();
-//        Book b = br.findOne(this.getBookId());
+//        BookRepository br =new BookRepository();
+//        Book b = br.findOne(this.bookId);
 //        return b;
     }
 }

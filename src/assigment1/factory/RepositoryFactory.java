@@ -1,10 +1,10 @@
 package assigment1.factory;
 
 import assigment1.enums.RepoType;
-import dao.impls.BookRentRepository;
-import dao.impls.BookRepository;
-import dao.impls.StudentRepository;
-import dao.inerfaces.IRepository;
+import assigment1.dao.impls.BookRentRepository;
+import assigment1.dao.impls.BookRepository;
+import assigment1.dao.impls.StudentRepository;
+import assigment1.dao.inerfaces.IRepository;
 
 public class RepositoryFactory {
     private RepositoryFactory(){

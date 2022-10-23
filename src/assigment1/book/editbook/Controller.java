@@ -2,7 +2,7 @@ package assigment1.book.editbook;
 
 import assigment1.Main;
 import assigment1.entities.Book;
-import dao.impls.BookRepository;
+import assigment1.dao.impls.BookRepository;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;

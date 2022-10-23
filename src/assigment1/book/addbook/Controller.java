@@ -1,18 +1,13 @@
 package assigment1.book.addbook;
 
 import assigment1.Main;
-import assigment1.database.Connector;
 import assigment1.entities.Book;
-import dao.impls.BookRepository;
+import assigment1.dao.impls.BookRepository;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
 
 public class Controller {
     public TextField txtName;

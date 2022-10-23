@@ -5,12 +5,17 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="assigment1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assigment1.Controller">
    <children>
       <Text layoutX="214.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hãy lựa chọn cái mà bạn thích" />
-      <Button onAction="#onToBook" layoutX="63.0" layoutY="90.0" mnemonicParsing="false" text="Sách" />
-      <Button onAction="#onToStudent" layoutX="259.0" layoutY="90.0" mnemonicParsing="false" text="Thành Viên" />
-      <Button onAction="#bookRent" layoutX="462.0" layoutY="90.0" mnemonicParsing="false" text="Quản Lý Mượn Sách" />
+      <Button layoutX="65.0" layoutY="70.0" mnemonicParsing="false" onAction="#onToBook" prefHeight="104.0" prefWidth="142.0" text="Sách" textFill="#e11010">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button layoutX="243.0" layoutY="70.0" mnemonicParsing="false" onAction="#onToStudent" prefHeight="104.0" prefWidth="142.0" text="Thành Viên" textFill="#ee1d1d">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="419.0" layoutY="70.0" mnemonicParsing="false" onAction="#ontoBookRent" prefHeight="104.0" prefWidth="142.0" text="Quản Lý Mượn Sách" textFill="#eb1e1e" />
    </children>
 </Pane>

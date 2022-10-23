@@ -4,7 +4,7 @@ import assigment1.Main;
 import assigment1.entities.Student;
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
-import dao.impls.StudentRepository;
+import assigment1.dao.impls.StudentRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

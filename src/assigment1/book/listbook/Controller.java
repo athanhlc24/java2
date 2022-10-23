@@ -1,10 +1,9 @@
 package assigment1.book.listbook;
 import assigment1.Main;
-import assigment1.database.Connector;
 import assigment1.entities.Book;
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
-import dao.impls.BookRepository;
+import assigment1.dao.impls.BookRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,10 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import java.net.URL;
-import java.sql.ResultSet;
 import java.util.ResourceBundle;
 public class Controller implements Initializable{
     public TableView<Book> tbBooks;

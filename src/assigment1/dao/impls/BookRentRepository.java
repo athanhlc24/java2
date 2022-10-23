@@ -1,8 +1,8 @@
-package dao.impls;
+package assigment1.dao.impls;
 
 import assigment1.database.Connector;
 import assigment1.entities.BookRent;
-import dao.inerfaces.IRepository;
+import assigment1.dao.inerfaces.IRepository;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -13,14 +13,14 @@ public class BookRentRepository implements IRepository<BookRent> {
         ArrayList<BookRent> ls = new ArrayList<>();
         try {
             String sql_txt = "select * from bookrents";
-            Connector conn =Connector.getInstance();
+            Connector conn = Connector.getInstance();
             ResultSet rs = conn.query(sql_txt);
             while (rs.next()){
                 ls.add(new BookRent(
                         rs.getInt("id"),
                         rs.getInt("bookId"),
                         rs.getInt("studentId"),
-                        rs.getDate("renDate"),
+                        rs.getDate("rentDate"),
                         rs.getDate("expiredDate"),
                         rs.getInt("status")
                 ));
@@ -31,7 +31,7 @@ public class BookRentRepository implements IRepository<BookRent> {
         }
 
 
-        return null;
+        return ls;
     }
 
     @Override
