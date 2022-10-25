@@ -75,6 +75,7 @@ public class BookRent {
     }
 
     public String getBookName() {
+        System.out.println(this.book());
         return this.book().getName();
     }
 

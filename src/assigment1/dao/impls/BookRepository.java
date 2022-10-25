@@ -89,7 +89,7 @@ public class BookRepository implements IRepository<Book> {//THAY BOOK_REPOSITORY
     @Override
     public Book findOne(Integer id) {
         try {
-            String sql_txt = "select * from books where id?";
+            String sql_txt = "select * from books where id=?";
             Connector conn = Connector.getInstance();
             ArrayList arr = new ArrayList<>();
             arr.add(id);

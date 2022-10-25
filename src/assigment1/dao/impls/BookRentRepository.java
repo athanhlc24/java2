@@ -29,8 +29,6 @@ public class BookRentRepository implements IRepository<BookRent> {
         }catch (Exception e){
 
         }
-
-
         return ls;
     }
 

@@ -30,7 +30,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tdId.setCellValueFactory(new PropertyValueFactory<>("id"));
-        tdBook.setCellValueFactory(new PropertyValueFactory<>("bookId"));
+        tdBook.setCellValueFactory(new PropertyValueFactory<>("bookName"));
         tdStudent.setCellValueFactory(new PropertyValueFactory<>("studentId"));
         tdRentDate.setCellValueFactory(new PropertyValueFactory<>("rentDate"));
         tdExpired.setCellValueFactory(new PropertyValueFactory<>("expiredDate"));
