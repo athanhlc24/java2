@@ -1,7 +1,17 @@
 package demoThread;
 
 public class Main {
-    public static void main (String[]args){
+    public static void main(String []args){
+        SubThread1 s = new SubThread1();
+        s.setDaemon(true);
+        SubRunnable r = new SubRunnable();
+        Thread t = new Thread(r);
+//        t.setDaemon(true);
+        s.start();
+        t.start();
+
+    }
+    public static void main2 (String[]args){
         //thread
        SubThread1 s1 = new SubThread1();
        s1.start();
