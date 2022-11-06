@@ -1,6 +1,7 @@
 package assigment1.dao.impls;
 
 import assigment1.database.Connector;
+import assigment1.entities.Book;
 import assigment1.entities.Student;
 import assigment1.dao.inerfaces.IRepository;
 
@@ -85,6 +86,24 @@ public class StudentRepository implements IRepository<Student> {
 
     @Override
     public Student findOne(Integer id) {
+        try {
+            String sql_txt = "select * from student where id=?";
+            Connector conn = Connector.getInstance();
+            ArrayList arr = new ArrayList<>();
+            arr.add(id);
+            ResultSet rs = conn.excuteQuery(sql_txt,arr);
+            while (rs.next()){
+                int Id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String tel =  rs.getString("tel");
+
+                return new Student(Id,name,email,tel);
+
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 }

@@ -22,7 +22,7 @@ public class Controller implements Initializable {
     public TableView<BookRent> tbRents;
     public TableColumn<BookRent,Integer> tdId;
     public TableColumn<BookRent,String> tdBook;
-    public TableColumn<BookRent,Integer> tdStudent;
+    public TableColumn<BookRent,String> tdStudent;
     public TableColumn<BookRent, Date> tdRentDate;
     public TableColumn<BookRent,String> tdStatus;
     public TableColumn<BookRent,Date> tdExpired;
@@ -31,7 +31,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         tdId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tdBook.setCellValueFactory(new PropertyValueFactory<>("bookName"));
-        tdStudent.setCellValueFactory(new PropertyValueFactory<>("studentId"));
+        tdStudent.setCellValueFactory(new PropertyValueFactory<>("studentName"));
         tdRentDate.setCellValueFactory(new PropertyValueFactory<>("rentDate"));
         tdExpired.setCellValueFactory(new PropertyValueFactory<>("expiredDate"));
         tdStatus.setCellValueFactory(new PropertyValueFactory<>("statusLabel"));

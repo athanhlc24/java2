@@ -1,5 +1,6 @@
 package assigment1.entities;
 
+import assigment1.dao.impls.StudentRepository;
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
 import assigment1.dao.impls.BookRepository;
@@ -15,7 +16,16 @@ public class BookRent {
     private Integer status;
 
     private String bookName;
+    private String studentName;
     private String statusLabel;
+
+    public BookRent() {
+    }
+
+    public BookRent(Integer bookId, Integer studentId) {
+        this.bookId = bookId;
+        this.studentId = studentId;
+    }
 
     public BookRent(Integer id, Integer bookId, Integer studentId, Date rentDate, Date expiredDate, Integer status) {
         this.id = id;
@@ -75,8 +85,8 @@ public class BookRent {
     }
 
     public String getBookName() {
-        System.out.println(this.book());
-        return this.book().getName();
+//        System.out.println(this.book());
+        return this.book().getName() ;
     }
 
     public void setBookName(String bookName) {
@@ -87,8 +97,22 @@ public class BookRent {
         return status==0?"Chưa trả":"Đã trả";
     }
 
+    public String getStudentName() {
+        return this.student().getName();
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
     public Book book(){
       return ((BookRepository)RepositoryFactory.createRepository(RepoType.BOOK)).findOne(this.getBookId());
+//        BookRepository br =new BookRepository();
+//        Book b = br.findOne(this.bookId);
+//        return b;
+    }
+    public Student student(){
+        return ((StudentRepository)RepositoryFactory.createRepository(RepoType.STUDENT)).findOne(this.getBookId());
 //        BookRepository br =new BookRepository();
 //        Book b = br.findOne(this.bookId);
 //        return b;

@@ -1,7 +1,9 @@
 package assigment1.bookrent.create;
 
 import assigment1.Main;
+import assigment1.dao.impls.BookRentRepository;
 import assigment1.entities.Book;
+import assigment1.entities.BookRent;
 import assigment1.entities.Student;
 import assigment1.enums.RepoType;
 import assigment1.factory.RepositoryFactory;
@@ -19,6 +21,7 @@ import javafx.scene.control.DatePicker;
 
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -41,19 +44,25 @@ public class Controller implements Initializable {
     }
 
     public void Submit(ActionEvent actionEvent) {
-        Book selected = cbBook.getSelectionModel().getSelectedItem();
-        LocalDate dp = dpExpired.getValue();
-        Student selectedStudent = cbStudent.getSelectionModel().getSelectedItem();
-
-        
-
-        System.out.println(selected);
-        System.out.println(dp);
-        System.out.println(selectedStudent);
+        try {
+            Book selected = cbBook.getSelectionModel().getSelectedItem();
+            Student selectedStudent = cbStudent.getSelectionModel().getSelectedItem();
+            BookRentRepository br = new BookRentRepository();
+            ArrayList<BookRent> ls = new ArrayList<>();
+            ls.addAll(br.all());
+            BookRent br1  = new BookRent(selected.getId(), selectedStudent.getId());
+            if (br.create(br1)){
+                ontoBack();
+            }else {
+                System.out.println("loi roi");
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
 
     }
 
-    public void ontoBack(ActionEvent actionEvent) throws Exception{
+    public void ontoBack() throws Exception{
         Parent listBook = FXMLLoader.load(getClass().getResource("../list/list.fxml"));
         Main.rootStage.setTitle("Books");
         Main.rootStage.setScene(new Scene(listBook,800,600));

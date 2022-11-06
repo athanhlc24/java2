@@ -34,6 +34,18 @@ public class BookRentRepository implements IRepository<BookRent> {
 
     @Override
     public boolean create(BookRent bookRent) {
+        try {
+            String sql_txt = "insert into bookrents(bookId,studentId) values(?,?)";
+            Connector conn = Connector.getInstance();
+            ArrayList arr = new ArrayList<>();
+            arr.add(bookRent.getBookId());
+            arr.add(bookRent.getStudentId());
+            if (conn.excute(sql_txt,arr)){
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         return false;
     }
 
