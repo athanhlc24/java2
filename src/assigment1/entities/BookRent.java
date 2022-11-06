@@ -104,6 +104,9 @@ public class BookRent {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
+    public String toString(){
+        return book().getName() + student().getName();
+    }
 
     public Book book(){
       return ((BookRepository)RepositoryFactory.createRepository(RepoType.BOOK)).findOne(this.getBookId());
@@ -112,7 +115,7 @@ public class BookRent {
 //        return b;
     }
     public Student student(){
-        return ((StudentRepository)RepositoryFactory.createRepository(RepoType.STUDENT)).findOne(this.getBookId());
+        return ((StudentRepository)RepositoryFactory.createRepository(RepoType.STUDENT)).findOne(this.getStudentId());
 //        BookRepository br =new BookRepository();
 //        Book b = br.findOne(this.bookId);
 //        return b;
