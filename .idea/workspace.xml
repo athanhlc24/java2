@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
-      <change beforePath="$PROJECT_DIR$/src/thi/list/ListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thi/list/ListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thi/student.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thi/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thi/HomeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,7 @@
       <workItem from="1667751750845" duration="928000" />
       <workItem from="1667753180619" duration="598000" />
       <workItem from="1667832234403" duration="615000" />
-      <workItem from="1668078206158" duration="3117000" />
+      <workItem from="1668078206158" duration="3639000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -338,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668080825600</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="up">
+      <created>1668081547802</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668081547802</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

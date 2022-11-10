@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import thi.add.AddController;
+
+import java.io.FileWriter;
 
 public class HomeController {
     public void addStudent(ActionEvent actionEvent) throws Exception{
@@ -26,5 +29,13 @@ public class HomeController {
     }
 
     public void save(ActionEvent actionEvent) {
+        try {
+            FileWriter f = new FileWriter("student.txt");
+            f.write(AddController.listStudent.toString());
+            f.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        System.out.println("Success...");
     }
 }
