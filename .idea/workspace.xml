@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
+      <change afterPath="$PROJECT_DIR$/src/thi/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thi/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thi/add/AddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thi/add/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thi/list/ListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/bookrent/create/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/bookrent/create/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/bookrent/list/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/bookrent/list/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/dao/impls/BookRentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/dao/impls/BookRentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/dao/impls/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/dao/impls/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/assigment1/entities/BookRent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/assigment1/entities/BookRent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assigment1/entities/BookRent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/entities/BookRent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +20,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Kotlin Class" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -41,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/java2/Hotel-T2203E&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/java2/java2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\java2\java2\src\assigment1\student\edit" />
@@ -69,7 +68,7 @@
       <recent name="dao.impls" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.thi.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assigment1.Main" />
       <module name="untitled" />
@@ -122,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="students.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="students.Main" />
+    <configuration name="thi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thi.Main" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="students.*" />
+          <option name="PATTERN" value="thi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.thi.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.demoI18n.Main" />
         <item itemvalue="Application.demoThread.Main" />
         <item itemvalue="Application.demo_generic.Main" />
-        <item itemvalue="Application.students.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +169,11 @@
       <workItem from="1667043695492" duration="2140000" />
       <workItem from="1667228046222" duration="3250000" />
       <workItem from="1667299493657" duration="6447000" />
-      <workItem from="1667641088922" duration="6068000" />
+      <workItem from="1667641088922" duration="6250000" />
+      <workItem from="1667751750845" duration="928000" />
+      <workItem from="1667753180619" duration="598000" />
+      <workItem from="1667832234403" duration="615000" />
+      <workItem from="1668078206158" duration="2471000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -326,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667735202862</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="up">
+      <created>1667735945873</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667735945874</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
