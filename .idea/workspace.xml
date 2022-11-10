@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/thi/student.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thi/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thi/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,8 @@
       <recent name="C:\java2\src\assigment1\book\addbook" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java2\java2\src\thi" />
+      <recent name="C:\java2\java2\src\thi\save" />
       <recent name="C:\java2\java2\src\students" />
       <recent name="C:\java2\java2\src\students\list" />
     </key>
@@ -169,7 +170,7 @@
       <workItem from="1667751750845" duration="928000" />
       <workItem from="1667753180619" duration="598000" />
       <workItem from="1667832234403" duration="615000" />
-      <workItem from="1668078206158" duration="3639000" />
+      <workItem from="1668078206158" duration="4359000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -346,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668081547802</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="up">
+      <created>1668082118174</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668082118174</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
