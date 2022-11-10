@@ -19,4 +19,12 @@ public class HomeController {
         Main.rootStage.setTitle("add");
         Main.rootStage.setScene(listScene);
     }
+
+    public void exit(ActionEvent actionEvent) {
+        System.exit(0);
+        
+    }
+
+    public void save(ActionEvent actionEvent) {
+    }
 }

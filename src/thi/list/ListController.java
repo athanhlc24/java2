@@ -10,12 +10,13 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import thi.Main;
 import thi.add.AddController;
+import thi.add.Student;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ListController implements Initializable {
-    public TableView tbSTUDENT;
+    public TableView<Student> tbSTUDENT;
 
     public TableColumn tbID;
     public TableColumn tbNAME;
