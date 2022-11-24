@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ff6452-1916-4649-a705-1c290e861a15" name="Changes" comment="up">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Clouds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Coord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/CurrentWeather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Sys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Weather__1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/entities/Wind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assigment1/services/WeatherServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assigment1/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assigment1/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +53,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/java2/java2",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/gson-2.9.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java2\java2\src\assigment1\entities" />
       <recent name="C:\java2\java2\src\assigment1\student\edit" />
       <recent name="C:\java2\java2\src\assigment1\book\editbook" />
       <recent name="C:\java2\src\assigment1\book\addbook" />
@@ -65,13 +81,26 @@
       <recent name="dao.impls" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.thi.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assigment1.Main" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="assigment1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherServices" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assigment1.services.WeatherServices" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assigment1.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,19 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo_generic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo_generic.Main" />
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo_generic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="thi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thi.Main" />
       <module name="untitled" />
@@ -133,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.thi.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WeatherServices" />
+        <item itemvalue="Application.thi.Main" />
         <item itemvalue="Application.demoI18n.Main" />
         <item itemvalue="Application.demoThread.Main" />
-        <item itemvalue="Application.demo_generic.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +186,8 @@
       <workItem from="1667751750845" duration="928000" />
       <workItem from="1667753180619" duration="598000" />
       <workItem from="1667832234403" duration="615000" />
-      <workItem from="1668078206158" duration="4359000" />
+      <workItem from="1668078206158" duration="5253000" />
+      <workItem from="1669286981591" duration="4644000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1665666079157</created>
@@ -354,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668082118174</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="up">
+      <created>1668082705527</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1668082705527</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

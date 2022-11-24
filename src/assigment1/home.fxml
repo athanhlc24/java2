@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -17,5 +18,15 @@
             <Font size="20.0" />
          </font></Button>
       <Button layoutX="419.0" layoutY="70.0" mnemonicParsing="false" onAction="#ontoBookRent" prefHeight="104.0" prefWidth="142.0" text="Quản Lý Mượn Sách" textFill="#eb1e1e" />
+      <Text fx:id="city" layoutX="65.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp" layoutX="64.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28" />
+      <Text layoutX="80.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o" wrappingWidth="12.9375" />
+      <Text layoutX="89.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+      <ImageView fx:id="icon" fitHeight="68.0" fitWidth="75.0" layoutX="136.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
    </children>
 </Pane>
